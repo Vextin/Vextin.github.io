@@ -1,10 +1,49 @@
-.logo
-{
-    font-size: 32px;
-    margin:0;
-    padding: 5px 5px;
 
+
+/* DROPDOWN BOX */ 
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
 }
+li a:hover, .dropdown:hover .dropbtn {
+    /* background-color: red; */
+  }
+  li.dropdown {
+    display: inline-block;
+
+  }
+  .dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: #292e35;
+    min-width: 140px;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-bottom: 15px;
+  }
+  
+  .dropdown-content a {
+    /* color: white; */
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #292e35;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* LISTS */
 li  { 
     float:left;  
     margin-top: 7px;
@@ -19,7 +58,6 @@ ul {
     text-align: center;
     margin: 3%;
     padding:  0;
-    overflow: hidden;
 } 
 li a {
     /* position: relative; */
@@ -28,27 +66,27 @@ li a {
     /* vertical-align: middle; */
     color: white;
     /* text-align: center; */
-    margin-top: 20px;
-    margin-left: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-decoration:none;
-    font-size: 12px;
+    font-size: 16px;
 }
 li a:hover {
     color: #dddddd;
     background-color: #0101010f;
     transition: background-color .3s
 }
-small
+
+/* TEXT */
+.logo
 {
-    font-size: 14px;
-}
-head
-{
-    position: fixed;
-    left: 0;
-    right:0;
+    font-size: 32px;
+    margin:0;
+    padding: 5px 5px;
 
 }
+
 .header
 {
     top: 0%;
@@ -90,10 +128,10 @@ head
 body
 {
     position: absolute;
-    top: 0;
+    top: 75px;
     left: 10%;
     right: 10%;
-    overflow:auto;
+    overflow:visible;
     background: #202630 none no-repeat scroll 0 0;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
